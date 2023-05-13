@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ESTILO.CSS">
+</head>
+<body>
+    <div id="container">
+        <form id="enviarForm">
+            <label for="Nome">Nome</label>
+            <input type="text" id="Nome" placeholder="Digite Seu Nome" required>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Digite seu email" required>
+            <label for="Telefone">Telefone</label>
+            <input type="tel" id="Telefone" placeholder="(00) 0000-0000">
+            <label for="Assunto">Assunto</label>
+            <select id="assunto" id="assunto">
+                <option>Abrir um chamado</option>
+                <option>Emissão de 2º via</option>
+                <option>Ouvidoria</option>
+            </select>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"></textarea>
+            <button type="submit">
+                <span>Enviar</span>
+                </button>           
+            
+        </form>
+    </div>
+    <script>
+        enviarForm.onsubmit = function(){
+            event.preventDefault();
+            window.location.href= ``
+        }
+    </script>
+</body>
+</html>
